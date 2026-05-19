@@ -1,0 +1,344 @@
+.tz-footer {
+  padding: 60px 40px;
+  font-family: 'Inter', sans-serif;
+  color: #2f4a32;
+  margin-top: 100px;
+}
+
+
+.tz-footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.tz-giant-text-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.tz-giant-text-container div {
+  width: 60%;
+  height: 1px;
+  margin-top: 50px;
+  background-color: #2f4a32;
+
+}
+
+/* Massive Header */
+.tz-giant-text {
+  /* font-size: clamp(5rem, 15vw, 18rem); */
+  font-size: 135px;
+  /* font-weight: 900; */
+  letter-spacing: -0.05em;
+  margin: 0;
+  line-height: 0.8;
+  padding-bottom: 40px;
+}
+
+.tz-main-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Left Info Column */
+.tz-info-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+}
+
+.tz-overline {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.tz-text-block p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 450px;
+}
+
+.tz-social-block {
+  margin-top: auto;
+}
+
+.tz-small-label {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.tz-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.tz-grid-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 6px;
+  /* optional for smoother feel */
+}
+
+.tz-social-icons a {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.tz-social-icons a:hover {
+  background-color: #fff;
+  border-color: #000;
+}
+
+/* Bento Grid */
+.tz-bento-grid {
+  flex: 1.5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 15px;
+}
+
+.tz-grid-item img {
+
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.3, 1),
+    filter 0.6s cubic-bezier(0.25, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.tz-grid-item.item-1 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+/* Top right */
+
+/* Contact Box Styling */
+.tz-contact-box {
+  background: transparent;
+  border: 1px solid #d1ccc5;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tz-contact-box h3 {
+  font-size: 1.8rem;
+  margin: 0 0 10px 0;
+}
+
+.tz-arrow-bottom {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+}
+
+.tz-grid-item:hover img {
+  transform: scale(1.04);
+  filter: brightness(0.9);
+}
+
+/* Soft lift effect */
+.tz-grid-item {
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.3, 1),
+    box-shadow 0.6s ease;
+}
+
+.tz-grid-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .tz-main-layout {
+    flex-direction: column;
+  }
+
+  .tz-bento-grid {
+    width: 100%;
+    grid-template-rows: repeat(2, 150px);
+  }
+}
+
+
+
+
+/* =========================================
+   New Styles for tz-overline-foot
+   ========================================= */
+.tz-overline-foot {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows links to wrap on very small screens */
+  gap: 25px;
+  /* Spacing between links */
+  margin-top: 30px;
+  /* Space above the link row */
+  padding-top: 20px;
+  border-top: 1px solid #d1ccc5;
+  /* Subtle separator line */
+  max-width: 450px;
+  /* Aligns with the paragraph width */
+}
+
+.tz-overline-foot a {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #2f4a32;
+  /* Using your defined footer color */
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+/* Hover Effect: Changes color and adds a subtle lift */
+.tz-overline-foot a:hover {
+  color: #000;
+  /* Darker on hover */
+  transform: translateY(-2px);
+}
+
+/* Optional: Underline animation on hover */
+.tz-overline-foot a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.tz-overline-foot a:hover::after {
+  width: 100%;
+}
+
+/* =========================================
+   Updated Responsive Code
+   ========================================= */
+@media (max-width: 1024px) {
+  .tz-footer {
+    padding: 40px 20px;
+    /* Reduce padding on tablets */
+    margin-top: 60px;
+    /* Reduce top margin */
+  }
+
+  .tz-giant-text {
+    line-height: 0.9;
+    /* Slightly adjust line height for smaller massive text */
+    padding-bottom: 30px;
+  }
+
+  .tz-main-layout {
+    flex-direction: column;
+    /* Stack left and right columns vertically */
+    gap: 50px;
+  }
+
+  .tz-info-col {
+    min-height: auto;
+    /* Remove fixed minimum height */
+    gap: 40px;
+  }
+
+  .tz-text-block p,
+  .tz-overline-foot {
+    max-width: 100%;
+    /* Allow text and links to span full width */
+  }
+
+  .tz-bento-grid {
+    width: 100%;
+    /* Adjust grid rows for mobile view to prevent images from getting squashed */
+    grid-template-rows: repeat(2, 250px);
+  }
+}
+
+/* Mobile Specific Adjustments (Phone size) */
+@media (max-width: 600px) {
+  .tz-giant-text {
+    /* Ensure the massive text doesn't overflow horizontally on very small screens */
+    font-size: clamp(3.5rem, 12vw, 5rem);
+    letter-spacing: -0.02em;
+  }
+
+  .tz-overline-foot {
+    gap: 15px;
+    /* Reduce gap between links on phones */
+    justify-content: center;
+    /* Center links for better mobile aesthetics */
+  }
+
+  .tz-text-block {
+    text-align: center;
+    /* Center align text for cleaner mobile look */
+  }
+
+  .tz-text-block p {
+    font-size: 1.1rem;
+    /* Slightly smaller text */
+  }
+
+  .tz-social-block {
+    align-items: center;
+    /* Center social block content */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tz-social-icons {
+    justify-content: center;
+  }
+
+  .tz-bento-grid {
+    /* Simplifies grid to 2 columns on phones for better image visibility */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    /* Let content determine height */
+    gap: 10px;
+  }
+
+  /* Resetting bento specific positioning for mobile */
+  .tz-grid-item.item-1 {
+    grid-column: span 2;
+    /* Make first image wide */
+    grid-row: auto;
+  }
+
+  .tz-contact-box {
+    grid-column: span 2;
+    /* Make contact box wide */
+    text-align: center;
+    padding: 20px;
+  }
+}

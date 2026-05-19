@@ -1,0 +1,259 @@
+/* ================= ROOT ================= */
+.navx-root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  position: relative;
+  padding: 10px 20px;
+  /* background: #fff; */
+}
+
+/* ================= LEFT ================= */
+.navx-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navx-logo-img {
+  width: 145px;
+}
+.navx-logo-imgg{
+  width: 80px;
+}
+.navx-logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2f4a32;
+}
+
+/* ================= MENU (DESKTOP DEFAULT) ================= */
+.navx-menu {
+  display: flex;
+}
+
+.navx-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* links */
+.navx-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* underline */
+.navx-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #2f4a32;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navx-links li a:hover {
+  color: #2f4a32;
+}
+
+.navx-links li a:hover::after {
+  width: 100%;
+}
+
+/* ================= RIGHT (DESKTOP USER) ================= */
+.navx-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navx-login-btn {
+  border: 1px solid #2f4a32;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #2f4a32;
+  transition: 0.3s;
+}
+
+.navx-login-btn:hover {
+  background: #2f4a32;
+  color: white;
+}
+
+.navx-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ddd;
+  padding: 4px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.navx-username {
+  font-size: 14px;
+}
+
+.navx-profile-icon {
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.navx-profile-icon:hover {
+  transform: scale(1.1);
+  color: #2f4a32;
+}
+
+/* ================= HAMBURGER (NOW RIGHT SIDE) ================= */
+.navx-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+
+  margin-left: auto; /* 🔥 pushes to right */
+  transition: 0.3s;
+}
+
+.navx-hamburger span {
+  width: 18px;
+  height: 2px;
+  background: #2f4a32;
+  transition: 0.3s;
+}
+
+/* hover */
+.navx-hamburger:hover {
+  background: #e6f4ea;
+}
+
+/* active animation */
+.navx-hamburger.active {
+  background: #2f4a32;
+}
+
+.navx-hamburger.active span {
+  background: #fff;
+}
+
+.navx-hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(6px);
+}
+
+.navx-hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navx-hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-6px);
+}
+
+/* ================= OVERLAY ================= */
+.navx-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 900;
+}
+
+/* ================= MOBILE USER MENU ================= */
+.mobile-user-profile,
+.mobile-login {
+  display: none;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+
+  .navx-hamburger {
+    display: flex;
+    z-index: 1200;
+  }
+
+  .navx-actions {
+    display: none; /* hide desktop user */
+  }
+
+  /* MENU SLIDE FROM RIGHT */
+  .navx-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 75%;
+    max-width: 320px;
+
+    background: #f8f6f1;
+
+    flex-direction: column;
+    padding: 90px 20px;
+
+    transform: translateX(100%);
+    transition: 0.4s ease;
+    z-index: 1000;
+  }
+
+  .navx-menu.show {
+    transform: translateX(0);
+  }
+
+  .navx-links {
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  /* MOBILE USER INSIDE MENU */
+  .mobile-user-profile,
+  .mobile-login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px;
+    margin-top: 15px;
+
+    background: #e6f4ea;
+    border-radius: 10px;
+    cursor: pointer;
+
+    width: 100%;
+  }
+
+  .mobile-user-profile svg {
+    font-size: 20px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 600px) {
+
+  .navx-logo-img {
+    width: 120px;
+  }
+
+  .navx-logo-text {
+    font-size: 18px;
+  }
+
+  .navx-root {
+    padding: 8px 12px;
+  }
+}

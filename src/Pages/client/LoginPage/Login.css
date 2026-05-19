@@ -1,0 +1,161 @@
+.loginPage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+/* LEFT SIDE */
+.loginCard {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: #ffffff;
+}
+
+.loginCard > div {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1f2937;
+  text-align: left;
+}
+
+/* TAG */
+.launchTag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 6px 10px;
+  background: #eef2f1;
+  color: #2f4a32;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* TITLE */
+.loginTitle {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* DESCRIPTION */
+.loginDesc {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* FORM */
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* INPUT */
+.loginForm input {
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.loginForm input:focus {
+  border-color: #2f4a32;
+}
+
+/* BUTTON */
+.loginForm button {
+  padding: 14px;
+  border: none;
+  background: #2f4a32;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.loginForm button:hover {
+  background: #1f3323;
+}
+
+/* SIGNUP TEXT */
+.signupText {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signupText a {
+  margin-left: 8px;
+  color: #2f4a32;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signupText a:hover {
+  text-decoration: underline;
+}
+
+/* RIGHT SIDE IMAGE */
+.loginRight {
+  width: 50%;
+  background-image: url("/images/track03.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .loginPage {
+    flex-direction: column;
+  }
+
+  .loginCard {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .loginRight {
+    display: none;
+  }
+}
+
+
+.dashboardBtn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dashboardBtn:hover {
+  background: #000;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}

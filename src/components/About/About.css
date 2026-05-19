@@ -1,0 +1,209 @@
+.auraAboutShell{
+  padding-top:100px;
+  margin: auto;
+  width: 95%;
+  /* background:#f6f3ea; */
+}
+
+.auraAboutGrid{
+  display:grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+/* Images */
+
+.auraAboutImg{
+  width:100%;
+  height:300px;
+
+  border-radius:8px;
+}
+
+.auraTallImg{
+  width:100%;
+  height:520px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+/* Content */
+
+.auraAboutTag{
+  font-size:12px;
+  letter-spacing:2px;
+  color:#777;
+}
+
+.auraAboutTitle{
+  font-size:38px;
+  font-weight:700;
+  margin:10px 0 20px;
+  line-height:1.3;
+  color: #2f4a32;;
+}
+
+.auraAboutText{
+    color:#777;
+
+  line-height:1.7;
+  margin-bottom:20px;
+}
+
+.auraAboutBtn{
+  border:none;
+  background:none;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* Why Section */
+
+.auraWhySection{
+  margin-top:70px;
+  position: relative;
+  bottom: 45px;
+}
+
+.auraWhyTitle{
+  font-size:28px;
+  margin-bottom:30px;
+  color: #2f4a32;
+  
+}
+
+.auraWhyGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+.auraWhyCard h3{
+  font-size:18px;
+  margin-bottom:8px;
+  color: #2f4a32;
+  
+}
+
+.auraWhyCard p{
+  color:#777;
+  line-height:1.6;
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================ */
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .auraAboutGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .auraAboutImageBox,
+  .auraAboutTallImage {
+    order: 1;
+  }
+
+  .auraAboutContent {
+    order: 2;
+    text-align: center;
+  }
+
+  .auraAboutTitle {
+    font-size: 30px;
+  }
+
+  .auraTallImg {
+    height: 400px;
+  }
+
+  .auraAboutImg {
+    height: 250px;
+  }
+
+  .auraWhyGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .auraAboutShell {
+    padding-top: 60px;
+  }
+
+  .auraAboutGrid {
+    gap: 20px;
+  }
+
+  .auraAboutTitle {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .auraAboutText {
+    font-size: 14px;
+  }
+
+  .auraAboutTag {
+    font-size: 10px;
+  }
+
+  .auraTallImg {
+    height: 300px;
+  }
+
+  .auraAboutImg {
+    height: 200px;
+  }
+
+  .auraWhySection {
+    margin-top: 50px;
+    bottom: 0;
+  }
+
+  .auraWhyTitle {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .auraWhyCard {
+    text-align: center;
+  }
+}
+
+
+/* Small Mobile (≤480px) */
+@media (max-width: 480px) {
+  .auraAboutTitle {
+    font-size: 20px;
+  }
+
+  .auraAboutText {
+    font-size: 13px;
+  }
+
+  .auraAboutBtn {
+    font-size: 14px;
+  }
+
+  .auraTallImg {
+    height: 250px;
+  }
+
+  .auraAboutImg {
+    height: 180px;
+  }
+}

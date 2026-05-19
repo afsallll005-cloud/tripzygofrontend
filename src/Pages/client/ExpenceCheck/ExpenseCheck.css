@@ -1,0 +1,232 @@
+/* ROOT */
+.xpns-root {
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+/* HERO */
+.xpns-hero {
+  background:  #283e28;
+  color: white;
+  padding: 60px 50px;
+  border-radius: 24px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  /* box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35); */
+}
+
+.xpns-hero h1 {
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+}
+
+.xpns-hero p {
+  opacity: 0.8;
+  margin-top: 8px;
+}
+
+/* glow effect */
+.xpns-hero::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  /* background: radial-gradient(circle, rgba(20,184,166,0.25), transparent); */
+  top: -120px;
+  right: -120px;
+}
+
+/* LAYOUT */
+.xpns-grid-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  width: 95%;
+  margin: auto;
+}
+
+/* CARD */
+.xpns-card-box {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 25px;
+  border: 1px solid rgba(255,255,255,0.4);
+  /* box-shadow: 
+    0 10px 30px rgba(0,0,0,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.6); */
+  /* transition: all 0.35s ease; */
+  margin-top: 40px;
+}
+
+.xpns-card-box:hover {
+  transform: translateY(-6px);
+  /* box-shadow: 0 25px 60px rgba(0,0,0,0.15); */
+}
+
+/* HEADINGS */
+.xpns-card-box h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #0f172a;
+}
+
+/* INPUT GRID */
+.xpns-input-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 12px;
+}
+
+/* ACTION ROW */
+.xpns-action-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* INPUTS */
+.xpns-root input,
+.xpns-root select {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: rgba(255,255,255,0.9);
+  outline: none;
+  transition: all 0.25s ease;
+  font-size: 14px;
+}
+
+.xpns-root input:focus,
+.xpns-root select:focus {
+  border-color: #bdc7c6;
+  /* box-shadow: 0 0 0 4px rgba(20,184,166,0.15); */
+}
+
+/* BUTTON */
+.xpns-root button {
+  background: rgb(50, 117, 50);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.xpns-root button:hover {
+  transform: translateY(-2px);
+  /* box-shadow: 0 12px 25px rgba(20,184,166,0.4); */
+}
+
+/* LIST HEADER */
+.xpns-list-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* EXPENSE ITEM */
+.xpns-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.xpns-item:hover {
+  background: rgba(20, 184, 166, 0.08);
+  transform: scale(1.01);
+}
+
+/* ICON */
+.xpns-icon {
+  font-size: 20px;
+  background: linear-gradient(135deg, #ecfeff, #cffafe);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+/* INFO */
+.xpns-item-info {
+  flex: 1;
+}
+
+.xpns-item-info strong {
+  display: block;
+  font-size: 15px;
+  color: #0f172a;
+}
+
+.xpns-item-info small {
+  color: #64748b;
+}
+
+/* AMOUNT */
+.xpns-amount {
+  font-weight: 600;
+  color: #020617;
+}
+
+/* DELETE BUTTON */
+.xpns-item button {
+  background: transparent;
+  color: #ef4444;
+  font-size: 16px;
+}
+
+.xpns-item button:hover {
+  transform: scale(1.2);
+}
+
+/* EMPTY */
+.xpns-empty {
+  text-align: center;
+  color: #94a3b8;
+  margin-top: 15px;
+}
+
+/* PROGRESS */
+.xpns-progress-bar {
+  height: 10px;
+  background: #e2e8f0;
+  border-radius: 8px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.xpns-progress-bar div {
+  height: 100%;
+  background: linear-gradient(90deg, #14b8a6, #22c55e, #4ade80);
+  border-radius: 8px;
+  transition: width 0.4s ease;
+}
+
+/* TEXT */
+.xpns-right-panel p {
+  margin: 6px 0;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .xpns-grid-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .xpns-input-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .xpns-action-row {
+    flex-direction: column;
+  }
+}

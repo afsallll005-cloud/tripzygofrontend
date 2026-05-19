@@ -1,0 +1,140 @@
+/* MAIN CONTAINER */
+.edit-package-container {
+  margin-left: 260px;
+  padding: 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CARD */
+.edit-package-card {
+  max-width: 500px;
+  padding: 35px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+
+  animation: fadeIn 0.5s ease;
+}
+
+/* TITLE */
+.edit-package-card h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+/* FORM */
+.edit-package-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* INPUTS */
+.edit-package-card input,
+.edit-package-card textarea {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(255,255,255,0.85);
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+  font-family: inherit;
+}
+
+/* TEXTAREA */
+.edit-package-card textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* FOCUS EFFECT */
+.edit-package-card input:focus,
+.edit-package-card textarea:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 0 3px rgba(0,188,212,0.15);
+}
+
+/* IMAGE PREVIEW */
+.package-preview {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-top: 5px;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* FILE INPUT */
+.edit-package-card input[type="file"] {
+  padding: 10px;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+/* BUTTON */
+.update-package-btn {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00bcd4, #2196f3);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.update-package-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(33,150,243,0.3);
+}
+
+/* BUTTON ACTIVE */
+.update-package-btn:active {
+  transform: scale(0.98);
+}
+
+/* DISABLED */
+.update-package-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .edit-package-container {
+    margin-left: 0;
+    padding: 20px;
+    margin-top: 70px;
+  }
+
+  .edit-package-card {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .edit-package-card h2 {
+    font-size: 24px;
+  }
+}

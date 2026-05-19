@@ -1,0 +1,112 @@
+.signupPage{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+}
+
+/* LEFT SIDE */
+
+.signupLeft{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* background:#f7f7f7; */
+    padding:40px;
+}
+
+.signupContent{
+    width:100%;
+    max-width:400px;
+}
+
+.signupContent h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.signupContent p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+/* FORM */
+
+.signupContent form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.signupContent input{
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    font-size:16px;
+    outline:none;
+}
+
+.signupContent input:focus{
+    border-color:#2f4a32;
+}
+
+.signupContent button{
+    padding:14px;
+    border:none;
+    background:#2f4a32;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.signupContent button:hover{
+    background:#1f3323;
+}
+
+/* RIGHT SIDE IMAGE */
+
+.signupRight{
+    width:50%;
+    background-image:url("/images/track01.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.signupPage{
+    flex-direction:column;
+}
+
+.signupLeft{
+    width:100%;
+    min-height:100vh;
+}
+
+.signupRight{
+    display:none;
+}
+
+}
+
+
+.loginText{
+    margin-top:20px;
+    font-size:14px;
+    color:#555;
+}
+
+.loginBtn{
+    margin-left:8px;
+    color:#2f4a32;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.loginBtn:hover{
+    text-decoration:underline;
+}

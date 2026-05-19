@@ -1,0 +1,292 @@
+/* ========================= */
+/* MAIN CONTAINER */
+/* ========================= */
+
+.add-hero {
+  margin-left: 260px;
+  min-height: 100vh;
+  padding: 40px;
+  /* background: #f8fbff; */
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* ========================= */
+/* TITLE */
+/* ========================= */
+
+.add-hero h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 25px;
+}
+
+/* ========================= */
+/* FORM CARD */
+/* ========================= */
+
+.add-hero form {
+  width: 100%;
+  max-width: 520px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  padding: 30px;
+
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    0 3px 10px rgba(0, 0, 0, 0.04);
+
+  animation: fadeIn 0.5s ease;
+
+  box-sizing: border-box;
+}
+
+/* ========================= */
+/* INPUTS */
+/* ========================= */
+
+.add-hero input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 14px 16px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  outline: none;
+
+  font-size: 14px;
+  color: #111827;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  transition: all 0.3s ease;
+}
+
+/* INPUT FOCUS */
+
+.add-hero input:focus {
+  border-color: #00bcd4;
+
+  box-shadow:
+    0 0 0 4px rgba(0, 188, 212, 0.12);
+
+  transform: translateY(-1px);
+}
+
+/* FILE INPUT */
+
+.add-hero input[type="file"] {
+  padding: 12px;
+  cursor: pointer;
+  background: #f3f6f9;
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.add-hero button {
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #00bcd4, #2196f3);
+
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+
+.add-hero button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(33, 150, 243, 0.28);
+}
+
+/* ACTIVE */
+
+.add-hero button:active {
+  transform: scale(0.98);
+}
+
+/* DISABLED */
+
+.add-hero button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ========================= */
+/* ANIMATION */
+/* ========================= */
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+  .add-hero {
+    margin-left: 220px;
+    padding: 35px 25px;
+  }
+
+  .add-hero h2 {
+    font-size: 26px;
+  }
+
+  .add-hero form {
+    max-width: 100%;
+  }
+
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .add-hero {
+    margin-left: 0;
+    padding: 95px 18px 30px;
+
+    align-items: center;
+  }
+
+  .add-hero h2 {
+    width: 100%;
+    text-align: center;
+
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .add-hero form {
+    width: 100%;
+    max-width: 100%;
+
+    padding: 22px;
+
+    border-radius: 18px;
+  }
+
+  .add-hero input {
+    padding: 13px;
+    font-size: 14px;
+  }
+
+  .add-hero button {
+    padding: 13px;
+    font-size: 14px;
+  }
+
+}
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .add-hero {
+    padding: 88px 14px 20px;
+  }
+
+  .add-hero h2 {
+    font-size: 21px;
+  }
+
+  .add-hero form {
+    padding: 18px;
+    gap: 15px;
+
+    border-radius: 16px;
+  }
+
+  .add-hero input {
+    padding: 12px;
+    font-size: 13px;
+
+    border-radius: 10px;
+  }
+
+  .add-hero button {
+    padding: 12px;
+    font-size: 13px;
+
+    border-radius: 10px;
+  }
+
+}
+
+/* ========================= */
+/* EXTRA SMALL MOBILE */
+/* ========================= */
+
+@media (max-width: 360px) {
+
+  .add-hero {
+    padding: 84px 10px 20px;
+  }
+
+  .add-hero h2 {
+    font-size: 18px;
+  }
+
+  .add-hero form {
+    padding: 15px;
+  }
+
+  .add-hero input {
+    font-size: 12px;
+    padding: 11px;
+  }
+
+  .add-hero button {
+    font-size: 12px;
+    padding: 11px;
+  }
+
+}

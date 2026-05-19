@@ -1,0 +1,380 @@
+/* ROOT */
+.vogue-hotel-root {
+    background-color: #f7f3f0;
+    min-height: 100vh;
+    width: 95%;margin: auto;
+    padding-bottom: 80px;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+}
+
+/* HERO IMAGE */
+.vogue-header-FirstImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+
+.vogue-header-FirstImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* HERO SECTION */
+.vogue-hero {
+    position: relative;
+    height: 85vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGE */
+.vogue-hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* DARK OVERLAY */
+.vogue-hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.6)
+    );
+    z-index: 1;
+}
+
+/* CONTENT */
+.vogue-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* TAG */
+.vogue-hero-tag {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+/* TITLE */
+.vogue-hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+/* SUBTEXT */
+.vogue-hero-content p {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+.vogue-hero-btn {
+    padding: 14px 30px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.vogue-hero-btn:hover {
+    background: #fff;
+    color: #2f4a32;
+}
+
+/* FILTER BAR */
+.vogue-filter-bar {
+    max-width: 1100px;
+    margin: -50px auto 40px; /* floating effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #fff;
+    /* box-shadow: 0 10px 30px rgba(0,0,0,0.08); */
+    /* border-radius: 10px; */
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
+}
+
+.vogue-filter-bar input,
+.vogue-filter-bar select {
+    flex: 1;
+    min-width: 160px;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.vogue-filter-bar input:focus,
+.vogue-filter-bar select:focus {
+    border-color: #2f4a32;
+    background: #fff;
+}
+
+.vogue-filter-btn {
+    background: #2f4a32;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.vogue-filter-btn:hover {
+    background: #1b263b;
+}
+
+/* HEADER TEXT */
+.vogue-header-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px 20px;
+    border-top: 1px dotted #ccc;
+}
+
+.vogue-pre-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #777;
+    display: block;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.vogue-main-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    color: #2f4a32;
+    text-transform: uppercase;
+}
+
+/* RESULTS COUNT */
+.vogue-results-count {
+    max-width: 1200px;
+    margin: 10px auto 30px;
+    font-size: 14px;
+    color: #555;
+    text-align: right;
+    padding: 0 20px;
+}
+
+/* GRID */
+.vogue-room-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* CARD */
+.vogue-chamber-card {
+    padding: 40px;
+    border-right: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    transition: 0.3s;
+}
+
+/* Remove border on last column */
+.vogue-chamber-card:nth-child(3n) {
+    border-right: none;
+}
+
+/* IMAGE */
+.vogue-media-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.vogue-chamber-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.vogue-chamber-card:hover .vogue-chamber-img {
+    transform: scale(1.05);
+}
+
+/* PRICE BADGE */
+.vogue-price-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #2f4a32;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vogue-per-night {
+    font-size: 8px;
+    line-height: 1;
+    text-align: right;
+}
+
+.vogue-price-val {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* CONTENT */
+.vogue-chamber-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #2f4a32;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.vogue-amenity-row {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+/* BOOK BUTTON */
+.vogue-book-anchor {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #2f4a32;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+.vogue-book-anchor:hover {
+    color: #268e33;
+    border-color: #268e33;
+}
+
+/* NO RESULTS */
+.vogue-no-results {
+    text-align: center;
+    width: 100%;
+    padding: 60px 20px;
+    color: #777;
+    grid-column: span 3;
+}
+
+/* FOOTER BUTTON */
+.vogue-gallery-footer {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.vogue-load-more {
+    background-color: #2f4a32;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.vogue-load-more:hover {
+    background-color: #1b263b;
+    letter-spacing: 3px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .vogue-room-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vogue-chamber-card:nth-child(2n) {
+        border-right: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .vogue-header-FirstImg {
+        height: 400px;
+    }
+
+    .vogue-room-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .vogue-chamber-card {
+        border-right: none;
+    }
+
+    .vogue-filter-bar {
+        margin-top: -30px;
+    }
+
+    .vogue-no-results {
+        grid-column: span 1;
+    }
+}
+
+.fzz-filter-section {
+  /* background: #f8f6f1; */
+  padding: 50px 40px;
+  position: relative;
+  margin-top: -60px;
+  width: 80%;
+  margin: auto;
+  z-index: 10;
+}
+
+
+.vogue-main-headinggg{
+     font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    color: #2f4a32;
+    text-transform: uppercase;
+    text-align: center;
+}
+.vogue-main-headinggg-p{
+    text-align: center;
+    color: #676767;
+     font-family: 'Playfair Display', serif;
+font-size: 20px;
+margin-bottom: 35px;
+}
