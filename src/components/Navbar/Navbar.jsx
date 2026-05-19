@@ -50,7 +50,7 @@ function Navbar() {
           <li><a href="/#About" onClick={() => setMenuOpen(false)}>About us</a></li>
           <li><a href="/#Packagecards" onClick={() => setMenuOpen(false)}>Packages</a></li>
           <li><Link to="/ExpenseChecke" onClick={() => setMenuOpen(false)}>Expense</Link></li>
-          <li><Link to="/support" onClick={() => setMenuOpen(false)}>Support</Link></li>
+          <li><Link to="/TripPlanner" onClick={() => setMenuOpen(false)}>Trip Planner</Link></li>
           <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contacts</Link></li>
 
           {/* USER PROFILE INSIDE MENU */}
