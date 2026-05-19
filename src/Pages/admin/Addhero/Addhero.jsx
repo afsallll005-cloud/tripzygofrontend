@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AddHero.css";
+import "./Addhero.css";
 import Sidebar from "../../../components/Sidebar/Sidebar";
 import Swal from "sweetalert2";
 
