@@ -78,7 +78,7 @@ function PackageDetails() {
   }
 
   return (
-    <div className="container">
+   <>
 
       {/* NAVBAR */}
       <Navbar />
@@ -143,6 +143,7 @@ function PackageDetails() {
 
         </div>
 
+ <div className="container">
         {/* CONTENT AREA */}
         <div className="pdx-content-shell">
 
@@ -416,6 +417,7 @@ function PackageDetails() {
       <Footer />
 
     </div>
+     </>
   );
 }
 
