@@ -388,9 +388,9 @@
 /* ================= TABLET ================= */
 @media (max-width: 1024px) {
 
-  .pdx-wrapper {
+  /* .pdx-wrapper {
     width: 95%;
-  }
+  } */
 
   .pdx-main-grid {
     grid-template-columns: 1fr;
@@ -422,9 +422,9 @@
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
 
-  .pdx-wrapper {
+  /* .pdx-wrapper {
     width: 92%;
-  }
+  } */
 
   .pdx-h1title {
     font-size: 28px;
