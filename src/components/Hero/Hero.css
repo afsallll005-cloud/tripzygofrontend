@@ -232,6 +232,9 @@ a {
 .fz-filter-btn svg {
   margin-right: 8px;
 }
+select {
+  color: #333;
+}
 
 /* ================= RESPONSIVE ================= */
 
