@@ -1,7 +1,8 @@
 /* ================= HERO ================= */
 
 .hero {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
+  padding-top:20px
   width: 94%;
   margin: auto;
 }
