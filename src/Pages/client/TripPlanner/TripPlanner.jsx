@@ -13,173 +13,897 @@ import {
 import Footer from "../../../components/Footer/Footer";
 
 const itineraryData = {
-  Goa: [
-    {
-      day: "Day 1",
-      activities: [
-        {
-          time: "09:00",
-          act: "Arrive at Goa Airport & hotel check-in",
-          cost: "—",
-        },
-        {
-          time: "12:00",
-          act: "Lunch at beach shack",
-          cost: "₹800",
-        },
-        {
-          time: "15:00",
-          act: "Explore Baga & Calangute Beach",
-          cost: "—",
-        },
-        {
-          time: "20:00",
-          act: "Sunset dinner at Thalassa",
-          cost: "₹1,400",
-        },
-      ],
-    },
-  ],
+ Goa: [
+  {
+    day: "Day 1",
+    activities: [
+      {
+        time: "09:00",
+        act: "Arrive at Goa Airport & hotel check-in",
+        cost: "—",
+      },
+      {
+        time: "12:00",
+        act: "Lunch at beach shack",
+        cost: "₹800",
+      },
+      {
+        time: "15:00",
+        act: "Explore Baga & Calangute Beach",
+        cost: "—",
+      },
+      {
+        time: "20:00",
+        act: "Sunset dinner at Thalassa",
+        cost: "₹1,400",
+      },
+    ],
+  },
 
-  Delhi: [
-    {
-      day: "Day 1",
-      activities: [
-        {
-          time: "09:00",
-          act: "Visit India Gate & Rashtrapati Bhavan",
-          cost: "—",
-        },
-        {
-          time: "12:00",
-          act: "Lunch at Connaught Place",
-          cost: "₹1,000",
-        },
-        {
-          time: "15:00",
-          act: "Explore Red Fort & Chandni Chowk",
-          cost: "₹500",
-        },
-        {
-          time: "20:00",
-          act: "Street food tour",
-          cost: "₹700",
-        },
-      ],
-    },
-  ],
+  {
+    day: "Day 2",
+    activities: [
+      {
+        time: "08:00",
+        act: "Breakfast at hotel",
+        cost: "₹400",
+      },
+      {
+        time: "10:00",
+        act: "Water sports at Baga Beach",
+        cost: "₹2,000",
+      },
+      {
+        time: "14:00",
+        act: "Lunch at Britto's",
+        cost: "₹1,000",
+      },
+      {
+        time: "18:00",
+        act: "Visit Fort Aguada",
+        cost: "₹100",
+      },
+      {
+        time: "21:00",
+        act: "Nightlife at Tito's Lane",
+        cost: "₹1,500",
+      },
+    ],
+  },
 
-  Rajasthan: [
-    {
-      day: "Day 1",
-      activities: [
-        {
-          time: "08:00",
-          act: "Explore Jaipur City Palace",
-          cost: "₹400",
-        },
-        {
-          time: "11:00",
-          act: "Visit Hawa Mahal",
-          cost: "₹200",
-        },
-        {
-          time: "14:00",
-          act: "Traditional Rajasthani lunch",
-          cost: "₹900",
-        },
-        {
-          time: "18:00",
-          act: "Camel ride & desert sunset",
-          cost: "₹1,200",
-        },
-      ],
-    },
-  ],
+  {
+    day: "Day 3",
+    activities: [
+      {
+        time: "08:00",
+        act: "South Goa sightseeing",
+        cost: "₹500",
+      },
+      {
+        time: "10:00",
+        act: "Visit Colva Beach",
+        cost: "—",
+      },
+      {
+        time: "13:00",
+        act: "Lunch at beach restaurant",
+        cost: "₹900",
+      },
+      {
+        time: "16:00",
+        act: "Explore Cabo de Rama Fort",
+        cost: "₹100",
+      },
+      {
+        time: "19:30",
+        act: "Beachside dinner",
+        cost: "₹1,200",
+      },
+    ],
+  },
 
-  Kashmir: [
-    {
-      day: "Day 1",
-      activities: [
-        {
-          time: "09:00",
-          act: "Shikara ride on Dal Lake",
-          cost: "₹600",
-        },
-        {
-          time: "12:00",
-          act: "Lunch at Srinagar cafe",
-          cost: "₹700",
-        },
-        {
-          time: "15:00",
-          act: "Explore Mughal Gardens",
-          cost: "₹300",
-        },
-        {
-          time: "20:00",
-          act: "Houseboat dinner",
-          cost: "₹1,500",
-        },
-      ],
-    },
-  ],
+  {
+    day: "Day 4",
+    activities: [
+      {
+        time: "07:00",
+        act: "Dudhsagar Waterfalls trip",
+        cost: "₹2,500",
+      },
+      {
+        time: "13:00",
+        act: "Lunch near Dudhsagar",
+        cost: "₹700",
+      },
+      {
+        time: "16:00",
+        act: "Spice Plantation tour",
+        cost: "₹800",
+      },
+      {
+        time: "20:00",
+        act: "Dinner at local Goan restaurant",
+        cost: "₹1,000",
+      },
+    ],
+  },
 
-  Meghalaya: [
-    {
-      day: "Day 1",
-      activities: [
-        {
-          time: "08:00",
-          act: "Visit Shillong Peak",
-          cost: "₹200",
-        },
-        {
-          time: "11:00",
-          act: "Explore Elephant Falls",
-          cost: "₹150",
-        },
-        {
-          time: "14:00",
-          act: "Lunch with local cuisine",
-          cost: "₹700",
-        },
-        {
-          time: "17:00",
-          act: "Walk around Umiam Lake",
-          cost: "₹400",
-        },
-      ],
-    },
-  ],
+  {
+    day: "Day 5",
+    activities: [
+      {
+        time: "09:00",
+        act: "Shopping at Anjuna Flea Market",
+        cost: "₹1,500",
+      },
+      {
+        time: "13:00",
+        act: "Lunch at Anjuna Beach",
+        cost: "₹800",
+      },
+      {
+        time: "16:00",
+        act: "Relax at Vagator Beach",
+        cost: "—",
+      },
+      {
+        time: "19:00",
+        act: "Farewell sunset cruise",
+        cost: "₹1,200",
+      },
+      {
+        time: "22:00",
+        act: "Pack and prepare for departure",
+        cost: "—",
+      },
+    ],
+  },
+],
 
-  Mumbai: [
-    {
-      day: "Day 1",
-      activities: [
-        {
-          time: "09:00",
-          act: "Visit Gateway of India",
-          cost: "—",
-        },
-        {
-          time: "12:00",
-          act: "Lunch at Marine Drive",
-          cost: "₹1,000",
-        },
-        {
-          time: "15:00",
-          act: "Explore Colaba Causeway",
-          cost: "₹500",
-        },
-        {
-          time: "20:00",
-          act: "Mumbai nightlife experience",
-          cost: "₹1,500",
-        },
-      ],
-    },
-  ],
+ Delhi: [
+  {
+    day: "Day 1",
+    activities: [
+      {
+        time: "09:00",
+        act: "Visit India Gate & Rashtrapati Bhavan",
+        cost: "—",
+      },
+      {
+        time: "12:00",
+        act: "Lunch at Connaught Place",
+        cost: "₹1,000",
+      },
+      {
+        time: "15:00",
+        act: "Explore Red Fort & Chandni Chowk",
+        cost: "₹500",
+      },
+      {
+        time: "20:00",
+        act: "Street food tour",
+        cost: "₹700",
+      },
+    ],
+  },
+
+  {
+    day: "Day 2",
+    activities: [
+      {
+        time: "09:00",
+        act: "Visit Qutub Minar",
+        cost: "₹600",
+      },
+      {
+        time: "12:00",
+        act: "Lunch at Hauz Khas Village",
+        cost: "₹1,200",
+      },
+      {
+        time: "15:00",
+        act: "Explore Hauz Khas Fort & Lake",
+        cost: "—",
+      },
+      {
+        time: "19:00",
+        act: "Shopping at Select Citywalk Mall",
+        cost: "₹2,000",
+      },
+    ],
+  },
+
+  {
+    day: "Day 3",
+    activities: [
+      {
+        time: "08:30",
+        act: "Visit Humayun's Tomb",
+        cost: "₹600",
+      },
+      {
+        time: "11:30",
+        act: "Explore Lodhi Garden",
+        cost: "—",
+      },
+      {
+        time: "13:00",
+        act: "Lunch at Khan Market",
+        cost: "₹1,000",
+      },
+      {
+        time: "17:00",
+        act: "Visit Lotus Temple",
+        cost: "—",
+      },
+      {
+        time: "20:00",
+        act: "Dinner at a fine-dining restaurant",
+        cost: "₹1,500",
+      },
+    ],
+  },
+
+  {
+    day: "Day 4",
+    activities: [
+      {
+        time: "09:00",
+        act: "Akshardham Temple visit",
+        cost: "₹500",
+      },
+      {
+        time: "13:00",
+        act: "Lunch near Akshardham",
+        cost: "₹800",
+      },
+      {
+        time: "15:00",
+        act: "National Museum tour",
+        cost: "₹300",
+      },
+      {
+        time: "19:00",
+        act: "Explore Dilli Haat",
+        cost: "₹1,000",
+      },
+    ],
+  },
+
+  {
+    day: "Day 5",
+    activities: [
+      {
+        time: "09:00",
+        act: "Shopping at Sarojini Nagar Market",
+        cost: "₹2,000",
+      },
+      {
+        time: "13:00",
+        act: "Lunch at local café",
+        cost: "₹800",
+      },
+      {
+        time: "15:00",
+        act: "Visit Agrasen ki Baoli",
+        cost: "—",
+      },
+      {
+        time: "18:00",
+        act: "Evening walk at Connaught Place",
+        cost: "—",
+      },
+      {
+        time: "20:00",
+        act: "Farewell dinner",
+        cost: "₹1,500",
+      },
+    ],
+  },
+],
+
+ Rajasthan: [
+  {
+    day: "Day 1",
+    activities: [
+      {
+        time: "08:00",
+        act: "Explore Jaipur City Palace",
+        cost: "₹400",
+      },
+      {
+        time: "11:00",
+        act: "Visit Hawa Mahal",
+        cost: "₹200",
+      },
+      {
+        time: "14:00",
+        act: "Traditional Rajasthani lunch",
+        cost: "₹900",
+      },
+      {
+        time: "18:00",
+        act: "Camel ride & desert sunset",
+        cost: "₹1,200",
+      },
+    ],
+  },
+
+  {
+    day: "Day 2",
+    activities: [
+      {
+        time: "08:00",
+        act: "Visit Amber Fort",
+        cost: "₹500",
+      },
+      {
+        time: "11:30",
+        act: "Explore Jal Mahal",
+        cost: "—",
+      },
+      {
+        time: "13:30",
+        act: "Lunch at local restaurant",
+        cost: "₹800",
+      },
+      {
+        time: "16:00",
+        act: "Shopping at Johari Bazaar",
+        cost: "₹1,500",
+      },
+      {
+        time: "20:00",
+        act: "Dinner with cultural show",
+        cost: "₹1,200",
+      },
+    ],
+  },
+
+  {
+    day: "Day 3",
+    activities: [
+      {
+        time: "07:00",
+        act: "Travel to Udaipur",
+        cost: "₹1,500",
+      },
+      {
+        time: "12:00",
+        act: "Lunch near Lake Pichola",
+        cost: "₹900",
+      },
+      {
+        time: "15:00",
+        act: "Boat ride on Lake Pichola",
+        cost: "₹600",
+      },
+      {
+        time: "18:00",
+        act: "Visit City Palace Udaipur",
+        cost: "₹400",
+      },
+      {
+        time: "20:00",
+        act: "Dinner overlooking the lake",
+        cost: "₹1,200",
+      },
+    ],
+  },
+
+  {
+    day: "Day 4",
+    activities: [
+      {
+        time: "08:00",
+        act: "Explore Sajjangarh (Monsoon Palace)",
+        cost: "₹300",
+      },
+      {
+        time: "11:00",
+        act: "Visit Saheliyon Ki Bari",
+        cost: "₹100",
+      },
+      {
+        time: "13:00",
+        act: "Traditional lunch",
+        cost: "₹800",
+      },
+      {
+        time: "16:00",
+        act: "Explore local handicraft markets",
+        cost: "₹1,000",
+      },
+      {
+        time: "19:00",
+        act: "Cultural folk dance performance",
+        cost: "₹700",
+      },
+    ],
+  },
+
+  {
+    day: "Day 5",
+    activities: [
+      {
+        time: "07:00",
+        act: "Travel to Jaisalmer",
+        cost: "₹2,000",
+      },
+      {
+        time: "13:00",
+        act: "Lunch in Jaisalmer",
+        cost: "₹900",
+      },
+      {
+        time: "15:00",
+        act: "Explore Jaisalmer Fort",
+        cost: "₹300",
+      },
+      {
+        time: "18:00",
+        act: "Desert safari and camel ride",
+        cost: "₹1,800",
+      },
+      {
+        time: "21:00",
+        act: "Overnight desert camp",
+        cost: "₹2,500",
+      },
+    ],
+  },
+],
+
+ Kashmir: [
+  {
+    day: "Day 1",
+    activities: [
+      {
+        time: "09:00",
+        act: "Shikara ride on Dal Lake",
+        cost: "₹600",
+      },
+      {
+        time: "12:00",
+        act: "Lunch at Srinagar cafe",
+        cost: "₹700",
+      },
+      {
+        time: "15:00",
+        act: "Explore Mughal Gardens",
+        cost: "₹300",
+      },
+      {
+        time: "20:00",
+        act: "Houseboat dinner",
+        cost: "₹1,500",
+      },
+    ],
+  },
+
+  {
+    day: "Day 2",
+    activities: [
+      {
+        time: "08:00",
+        act: "Visit Gulmarg",
+        cost: "₹1,500",
+      },
+      {
+        time: "11:00",
+        act: "Gondola cable car ride",
+        cost: "₹900",
+      },
+      {
+        time: "13:00",
+        act: "Lunch with mountain views",
+        cost: "₹800",
+      },
+      {
+        time: "15:00",
+        act: "Explore meadows & photography",
+        cost: "—",
+      },
+      {
+        time: "19:00",
+        act: "Return to Srinagar",
+        cost: "₹500",
+      },
+    ],
+  },
+
+  {
+    day: "Day 3",
+    activities: [
+      {
+        time: "07:00",
+        act: "Day trip to Pahalgam",
+        cost: "₹1,200",
+      },
+      {
+        time: "10:00",
+        act: "Visit Betaab Valley",
+        cost: "₹400",
+      },
+      {
+        time: "13:00",
+        act: "Lunch by Lidder River",
+        cost: "₹700",
+      },
+      {
+        time: "15:00",
+        act: "Horse riding in Aru Valley",
+        cost: "₹1,000",
+      },
+      {
+        time: "20:00",
+        act: "Dinner at local restaurant",
+        cost: "₹1,000",
+      },
+    ],
+  },
+
+  {
+    day: "Day 4",
+    activities: [
+      {
+        time: "08:00",
+        act: "Visit Sonamarg",
+        cost: "₹1,500",
+      },
+      {
+        time: "11:00",
+        act: "Explore Thajiwas Glacier",
+        cost: "₹800",
+      },
+      {
+        time: "13:30",
+        act: "Lunch at Sonamarg",
+        cost: "₹700",
+      },
+      {
+        time: "16:00",
+        act: "Nature walk & sightseeing",
+        cost: "—",
+      },
+      {
+        time: "19:00",
+        act: "Return to Srinagar",
+        cost: "₹500",
+      },
+    ],
+  },
+
+  {
+    day: "Day 5",
+    activities: [
+      {
+        time: "09:00",
+        act: "Shopping at Lal Chowk Market",
+        cost: "₹2,000",
+      },
+      {
+        time: "12:00",
+        act: "Lunch at traditional Kashmiri restaurant",
+        cost: "₹900",
+      },
+      {
+        time: "15:00",
+        act: "Visit Pari Mahal",
+        cost: "₹200",
+      },
+      {
+        time: "17:00",
+        act: "Relax by Dal Lake",
+        cost: "—",
+      },
+      {
+        time: "20:00",
+        act: "Farewell Kashmiri dinner",
+        cost: "₹1,500",
+      },
+    ],
+  },
+],
+
+ Meghalaya: [
+  {
+    day: "Day 1",
+    activities: [
+      {
+        time: "08:00",
+        act: "Visit Shillong Peak",
+        cost: "₹200",
+      },
+      {
+        time: "11:00",
+        act: "Explore Elephant Falls",
+        cost: "₹150",
+      },
+      {
+        time: "14:00",
+        act: "Lunch with local cuisine",
+        cost: "₹700",
+      },
+      {
+        time: "17:00",
+        act: "Walk around Umiam Lake",
+        cost: "₹400",
+      },
+    ],
+  },
+
+  {
+    day: "Day 2",
+    activities: [
+      {
+        time: "07:00",
+        act: "Travel to Cherrapunji",
+        cost: "₹800",
+      },
+      {
+        time: "10:00",
+        act: "Visit Nohkalikai Falls",
+        cost: "₹100",
+      },
+      {
+        time: "13:00",
+        act: "Lunch in Cherrapunji",
+        cost: "₹700",
+      },
+      {
+        time: "15:00",
+        act: "Explore Mawsmai Cave",
+        cost: "₹150",
+      },
+      {
+        time: "18:00",
+        act: "Sunset at Seven Sisters Falls",
+        cost: "₹100",
+      },
+    ],
+  },
+
+  {
+    day: "Day 3",
+    activities: [
+      {
+        time: "06:00",
+        act: "Trek to Double Decker Living Root Bridge",
+        cost: "₹500",
+      },
+      {
+        time: "12:00",
+        act: "Lunch at Nongriat Village",
+        cost: "₹600",
+      },
+      {
+        time: "14:00",
+        act: "Visit Rainbow Falls",
+        cost: "₹200",
+      },
+      {
+        time: "18:00",
+        act: "Return to Cherrapunji",
+        cost: "₹500",
+      },
+    ],
+  },
+
+  {
+    day: "Day 4",
+    activities: [
+      {
+        time: "08:00",
+        act: "Visit Dawki & Umngot River",
+        cost: "₹1,000",
+      },
+      {
+        time: "11:00",
+        act: "Boat ride on crystal-clear Umngot River",
+        cost: "₹500",
+      },
+      {
+        time: "13:00",
+        act: "Lunch at Dawki",
+        cost: "₹700",
+      },
+      {
+        time: "16:00",
+        act: "Explore India-Bangladesh Border viewpoint",
+        cost: "—",
+      },
+      {
+        time: "19:00",
+        act: "Return to Shillong",
+        cost: "₹800",
+      },
+    ],
+  },
+
+  {
+    day: "Day 5",
+    activities: [
+      {
+        time: "09:00",
+        act: "Visit Laitlum Canyon",
+        cost: "₹100",
+      },
+      {
+        time: "12:00",
+        act: "Shopping at Police Bazaar",
+        cost: "₹1,500",
+      },
+      {
+        time: "14:00",
+        act: "Lunch at local café",
+        cost: "₹800",
+      },
+      {
+        time: "16:00",
+        act: "Explore Don Bosco Museum",
+        cost: "₹200",
+      },
+      {
+        time: "19:00",
+        act: "Farewell dinner in Shillong",
+        cost: "₹1,200",
+      },
+    ],
+  },
+],
+
+ Mumbai: [
+  {
+    day: "Day 1",
+    activities: [
+      {
+        time: "09:00",
+        act: "Visit Gateway of India",
+        cost: "—",
+      },
+      {
+        time: "12:00",
+        act: "Lunch at Marine Drive",
+        cost: "₹1,000",
+      },
+      {
+        time: "15:00",
+        act: "Explore Colaba Causeway",
+        cost: "₹500",
+      },
+      {
+        time: "20:00",
+        act: "Mumbai nightlife experience",
+        cost: "₹1,500",
+      },
+    ],
+  },
+
+  {
+    day: "Day 2",
+    activities: [
+      {
+        time: "08:00",
+        act: "Visit Elephanta Caves",
+        cost: "₹600",
+      },
+      {
+        time: "12:00",
+        act: "Lunch near Gateway of India",
+        cost: "₹900",
+      },
+      {
+        time: "15:00",
+        act: "Explore Chhatrapati Shivaji Maharaj Terminus",
+        cost: "₹100",
+      },
+      {
+        time: "18:00",
+        act: "Walk along Bandra Bandstand",
+        cost: "—",
+      },
+      {
+        time: "20:00",
+        act: "Dinner at Bandra",
+        cost: "₹1,200",
+      },
+    ],
+  },
+
+  {
+    day: "Day 3",
+    activities: [
+      {
+        time: "09:00",
+        act: "Visit Siddhivinayak Temple",
+        cost: "—",
+      },
+      {
+        time: "11:00",
+        act: "Explore Haji Ali Dargah",
+        cost: "—",
+      },
+      {
+        time: "13:00",
+        act: "Lunch at Worli",
+        cost: "₹800",
+      },
+      {
+        time: "16:00",
+        act: "Visit Nehru Science Centre",
+        cost: "₹250",
+      },
+      {
+        time: "19:00",
+        act: "Sunset at Worli Sea Face",
+        cost: "—",
+      },
+    ],
+  },
+
+  {
+    day: "Day 4",
+    activities: [
+      {
+        time: "08:00",
+        act: "Explore Sanjay Gandhi National Park",
+        cost: "₹300",
+      },
+      {
+        time: "11:00",
+        act: "Visit Kanheri Caves",
+        cost: "₹250",
+      },
+      {
+        time: "13:00",
+        act: "Lunch near Borivali",
+        cost: "₹700",
+      },
+      {
+        time: "16:00",
+        act: "Shopping at Linking Road",
+        cost: "₹2,000",
+      },
+      {
+        time: "20:00",
+        act: "Street food tour in Bandra",
+        cost: "₹800",
+      },
+    ],
+  },
+
+  {
+    day: "Day 5",
+    activities: [
+      {
+        time: "09:00",
+        act: "Visit Juhu Beach",
+        cost: "—",
+      },
+      {
+        time: "12:00",
+        act: "Lunch at Juhu",
+        cost: "₹900",
+      },
+      {
+        time: "15:00",
+        act: "Explore Film City (guided tour)",
+        cost: "₹1,200",
+      },
+      {
+        time: "18:00",
+        act: "Relax at Marine Drive",
+        cost: "—",
+      },
+      {
+        time: "20:00",
+        act: "Farewell dinner with sea view",
+        cost: "₹1,500",
+      },
+    ],
+  },
+],
 
   default: [
     {
