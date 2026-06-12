@@ -7,15 +7,15 @@ function VisitorReviews() {
 const reviews = [
 {
 text:"From the moment we arrived, every detail was perfectly taken care of. The rooms are stunning, the service impeccable, and the views absolutely breathtaking. We will absolutely be returning.",
-author:"Salman | TripAdvisor"
+author:"Salman"
 },
 {
 text:"Amazing experience! The hospitality was world class and the resort views were unforgettable.",
-author:"Anas. | Google Reviews"
+author:"Anas"
 },
 {
 text:"Beautiful rooms, friendly staff and excellent food. Highly recommended.",
-author:"Aslah. | Booking.com"
+author:"Aslah"
 },
 {
 text:"One of the best luxury stays we've ever had.",
@@ -23,23 +23,23 @@ author:"Shibil T. | Expedia"
 },
 {
 text:"Truly a paradise getaway with incredible service.",
-author:"Shamil. | Agoda"
+author:"Shamil"
 },
 {
 text:"From the moment we arrived, every detail was perfectly taken care of. The rooms are stunning, the service impeccable, and the views absolutely breathtaking. We will absolutely be returning.",
-author:"Ayisha | TripAdvisor"
+author:"Ayisha"
 },
 {
 text:"Amazing experience! The hospitality was world class and the resort views were unforgettable.",
-author:"Misriya. | Google Reviews"
+author:"Misriya"
 },
 {
 text:"Beautiful rooms, friendly staff and excellent food. Highly recommended.",
-author:"Sinan. | Booking.com"
+author:"Sinan"
 },
 {
 text:"Beautiful rooms, friendly staff and excellent food. Highly recommended.",
-author:"Rihal. | Booking.com"
+author:"Rihal"
 },
 ];
 
