@@ -435,6 +435,9 @@ select {
     height: 50px;
     font-size: 14px;
   }
+  select {
+  color: #333;
+}
 }
 
 /* TABLET */
@@ -493,4 +496,7 @@ select {
     width: 100%;
     justify-content: center;
   }
+  select {
+  color: #333;
+}
 }
