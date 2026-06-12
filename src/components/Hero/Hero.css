@@ -88,7 +88,7 @@ a {
 /* ================= TRAVEL ================= */
 
 .travel-section {
-  width: 97%;
+  width: 94%;
   margin: auto;
   background: #f8f6f1;
 }
@@ -176,6 +176,8 @@ a {
   background: #f8f6f1;
   padding: 40px;
   position: relative;
+   width: 94%;
+  margin: auto;
 }
 
 .fz-filter-title {
