@@ -2,8 +2,7 @@
    GLOBAL WRAPPER
 ======================= */
 .pdx-wrapper {
-  width: 99%;
-  /* max-width: 1300px; */
+  /* width: 99%; */
   margin: auto;
   font-family: "Inter", sans-serif;
   color: #1f2a1f;
